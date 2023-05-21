@@ -1,0 +1,25 @@
+.nav-bar {
+    font-size: 20px;
+    font-family: arial;
+    margin: 50px;
+    
+  }
+  
+  .nav-bar ul li a {
+    text-decoration: none;
+    
+  }
+  
+  .nav-bar ul li {
+    display: inline-block;
+    margin-right: 1em;
+    
+  }
+  
+  .nav-bar ul li:hover {
+    border-bottom: 2px solid gray;
+    border-radius: 10%;
+    padding: 10px;
+    
+  }
+  

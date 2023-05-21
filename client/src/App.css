@@ -1,0 +1,12 @@
+.App {
+  text-align: right;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  background-image: url(./components/images/pic.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+

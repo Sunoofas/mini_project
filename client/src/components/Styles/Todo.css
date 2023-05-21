@@ -1,0 +1,76 @@
+
+/* *{
+    background-image: url(../images//pic.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
+
+.todo-header{
+    width: 20%;
+    border: none;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: blueviolet;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+.form-set{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: auto;
+}
+
+button{
+      cursor: pointer;
+      background-color: transparent;
+      margin-left: 10px;
+      border-radius: 5px;
+      padding: 10px;
+      width: 20%;
+      font-weight: bold;
+       color: white;
+}
+.list{
+    margin-top: 30px !important;
+}
+li{
+    margin-bottom: 10px;
+    margin-left: -10px;
+    background-color: pink !important;
+    color: black !important;
+    border: none !important;
+    list-style: none;
+    border-radius: 1px;
+    padding: 5px;
+}
+.list-items{
+    display: flex;
+}
+.list-items .list-item-list{
+    flex: 1;
+}
+.list-items .list-item-icons{
+    padding-left: 10px;
+    font-size: 25px;
+}
+#complete{
+    color: green;
+}
+#edit{
+    color: lightblue;
+}
+#delete{
+    color: orange;
+}
+#list-item{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
