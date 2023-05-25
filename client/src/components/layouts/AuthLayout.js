@@ -6,7 +6,7 @@ return(
        <nav className="nav-bar">
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/">Converter</Link>
             </li>
             <li>
                 <Link to="todo">Todo</Link>

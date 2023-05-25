@@ -14,7 +14,7 @@ const Todo = () => {
 
    useEffect(()=>{
     fetchTodo();
-   }, []);
+   }, [todos]);
 
 
    const fetchTodo = async()=>{
@@ -35,30 +35,12 @@ const Todo = () => {
   };
   //Adding todo into array,update and display
   const addTodo = () => {
-    // if (todo !== "") {
-    //   setTodos([...todos, { list: todo, id: Date.now(), status: false }]);
-    //   console.log(todos);
-    //   setTodo("");
-    // }
-    // if (editId) {
-    //   const editTodo = todos.find((todo) => todo.id === editId);
-    //   const updateTodo = todos.map((to) =>
-    //     to.id === editTodo.id
-    //       ? (to = { id: to.id, list: todo })
-    //       : (to = { id: to.id, list: to.list })
-    //   );
-    //   setTodos(updateTodo);
-    //   // setEditid(0);
-    //   setTodo("");
-    // }
 
    // connecting with backend
     addTodos(todo);
   };
-  //Delete the selected element and display the rest
   const onDelete = (id) => {
-    setTodos(todos.filter((to) => to.id !== id));
-    deleteTodos(setTodos);
+    deleteTodos(id);
   };
   //Complete the list
   const onComplete = (id) => {

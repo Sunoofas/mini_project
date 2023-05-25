@@ -6,11 +6,18 @@
   }
   
   .nav-bar ul li a {
-    text-decoration: none;
+    text-decoration:none ;
+    text-align: right;
     
   }
+  /* body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
   
   .nav-bar ul li {
+    text-align: right;
     display: inline-block;
     margin-right: 1em;
     

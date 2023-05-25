@@ -1,0 +1,17 @@
+.contact{
+    width: 500px;
+}
+.send-btn{
+    color: yellow;
+    background-color: blue;
+    display: flexbox;
+    width: 50px;
+    height: 35px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.inputvalue{
+    width: 55%;
+    padding: 10px 10px; 
+}
