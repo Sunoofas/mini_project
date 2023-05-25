@@ -7,7 +7,7 @@
 } */
 
 .todo-header{
-    width: 20%;
+    width: auto;
     border: none;
     padding: 40px;
     border-radius: 10px;
@@ -19,7 +19,7 @@
 }
 h1{
     text-align: center;
-    color: blanchedalmond;
+    color: black;
 }
 .form-set{
     display: flex;
@@ -55,7 +55,7 @@ li{
     display: flex;
 }
 .list-items .list-item-list{
-    flex: 1;
+    flex: 7;
 }
 .list-items .list-item-icons{
     padding-left: 10px;

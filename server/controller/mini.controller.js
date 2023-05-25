@@ -16,7 +16,6 @@ const postData = async (req, res) => {
   console.log("req.body", req.body);
   try {
     const input = await db.none("INSERT INTO mini_table(task) VALUES ($1)",[req.body.todo]);
-    // console.log("input", input);
     res.send('successfully complted ');
   } catch (error) {
     console.log(error);
@@ -38,9 +37,9 @@ const putData = async (req, res) => {
 };
 const deleteData = async (req, res) => {
   console.log("Deleted ");
-  console.log("req.body", req.body);
+  console.log("req.body, req.params", req.params, req.body);
   try {
-    const deletion = await db.any("DELETE FROM mini_table WHERE id=$1",[req.body.id]);
+    const deletion = await db.any("DELETE FROM mini_table WHERE id=$1",[req.params.id]);
     console.log("deletedvalue is", deletion);
     res.send(deletion);
   } catch (error) {

@@ -8,8 +8,6 @@ const addTodos = async (todo) => {
     .post(`${config.api_base_url}/api/task`, data)
     .then((data) => {
       console.log("data", data);
-      // setTodo("");
-      // fetchTodo(setTodos);
       return data;
     })
     .catch((error) => {
@@ -30,6 +28,7 @@ const updateTodos = async (editId, todo, setTodos, setTodo, setEditid) => {
 };
 
 const deleteTodos = async (id) => {
+  console.log('id', id);
   try {
     const result = await axios.delete(
       `${config.api_base_url}/api/task/${id}`
